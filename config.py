@@ -16,17 +16,14 @@ def load_required_env_variables(var_name: str):
             print(f"Error loading environment variables: {e}")
     return value
 
-def load_config():
-    api_key = load_required_env_variables('MISTRAL_API_KEY')
-    base_url = os.getenv('MISTRAL_BASE_URL', 'https://api.mistral.ai')
-    chat_endpoint = os.getenv('MISTRAL_CHAT_ENDPOINT', 'chat/completions')
-    version = os.getenv('MISTRAL_VERSION', 'v1')
-    timeout = int(os.getenv('MISTRAL_TIMEOUT', 20))
+def load_config(api_key=None):
+    if not api_key:
+        api_key = load_required_env_variables('MISTRAL_API_KEY')
     
     return {
         'api_key': api_key,
-        'base_url': base_url,
-        'chat_endpoint': chat_endpoint,
-        'version': version,
-        'timeout': timeout
+        'base_url': os.getenv('MISTRAL_BASE_URL', 'https://api.mistral.ai'),
+        'chat_endpoint': os.getenv('MISTRAL_CHAT_ENDPOINT', 'chat/completions'),
+        'version': os.getenv('MISTRAL_VERSION', 'v1'),
+        'timeout': int(os.getenv('MISTRAL_TIMEOUT', 20))
     }
