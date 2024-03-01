@@ -9,6 +9,16 @@
     <a href=".github/CONTRIBUTING.md" title="Go to contributions doc" target="_blank"><img src="https://img.shields.io/badge/contributions-welcome-2ea44f?style=for-the-badge" alt="contributions - welcome"></a>
 </p>
 
+<p align="center">
+    <a href="/">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RMNCLDYO/mistral-ai-toolkit/main/.github/mistral-logo-dark.png">
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RMNCLDYO/mistral-ai-toolkit/main/.github/mistral-logo-light.png">
+          <img alt="Mistral AI" width="500" src="https://raw.githubusercontent.com/RMNCLDYO/mistral-ai-toolkit/main/.github/mistral-logo-light.png">
+        </picture>
+    </a>
+</p>
+
 ## Overview
 
 The Mistral AI Toolkit is designed to simplify the use of Mistrals advanced language models through a user-friendly API wrapper and command-line interface (cli). It enables developers and AI enthusiasts to easily integrate and interact with Mistrals open models, streamlining the development process for AI-powered applications, making it easier for anyone to use these models without restrictions.
