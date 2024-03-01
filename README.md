@@ -85,10 +85,14 @@ The following Python packages are optional:
 
 1. Once you have your API key, you can create a new file named `.env` in the root directory (main folder) of this project, or rename the `example.env` file in the root directory of this project to `.env`.
 2. You can then add your API key to the `.env` file as follows:
-   ```
+   ```bash
    MISTRAL_API_KEY=your_api_key_here
    ```
-3. The program will automatically load and use your API key whenever you use the toolkit.
+3. If you choose not to use a .env file or pass the API key through the wrapper or cli, you can add the API key directly to your system by running the following command from the terminal:
+    ```bash
+    export MISTRAL_API_KEY=your_api_key_here
+    ```
+4. The program will automatically load and use your API key whenever you use the toolkit.
 
 ## General Usage
 
