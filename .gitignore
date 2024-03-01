@@ -164,5 +164,5 @@ cython_debug/
 # .DS_Store files are created by macOS Finder, the default file manager on macOS systems. 
 # These files are hidden and store custom attributes of a folder, such as the position of
 # icons, background images, and other metadata related to the folder's display settings.
-# If you are not using macOS, you can leave this uncommented.
+# If you are using macOS, you should uncomment this option.
 .DS_Store
