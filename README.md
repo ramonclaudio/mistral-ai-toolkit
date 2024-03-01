@@ -1,4 +1,10 @@
 <p align="center">
+    <a href="https://mistral.ai/" title="Go to mistral.ai homepage" target="_blank">
+        <img src="https://img.shields.io/badge/MISTRAL%20AI-FF7000?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM0AAAC9CAYAAAAQnvmoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBJREFUeNrs3cFKVFEcwOH/6FSEBSoRhHcxi1aFIO1s00Tv0C7GR8hdO2cTLe0Vol3vEE4vEEKrNhKkBRalY1bqmJ2ibaT3zuRx/D443NU9zD33/mburE4tkqKYakZJs9M78ezhx8jQRu1GLAfHKj1bM+kwPkzPVv3PcWkI71cnjdse22O3mEZzmC5oxD0F0YBoQDQgGhANIBoQDYgGRAOiAUQDogHRgGhANCAaQDQgGhANiAZEA4gGRAOiAdGAaEA0gGhANCAaEA2IBhANgzcuGjiaGdHAKVevPMN+GtsZXlkvGgdPo53hJ+vU7v3eRLevimJqLh0aZc9/+2htIBe7+Hyr/DVd7kV8GMZovqfxJssvhF8P0EKmX1adAczZigx3UZ6/0602wbrXM/CfBkQDiAZEA6IB0YBoANGAaEA0IBoQDYgGEA2IBkQDogHRAKIB0YBoQDQgGhANIBoQDYgGRAOiAUQDogHRgGhANCAa4F+qb1S7k8Z7C3lo29E6uB+3+j3tq8/rM196Fb4D3cP/GM1uGu8s5BE0osLW5X8zPbFXbQL30OsZiAZEA6IB0QCiAdGAaEA0IBoQDSAaEA2IBkQDogFEA6IB0YBoQDQgGkA0IBoQDYgGRAOIBkQDogHRgGhANIBoQDQgGjixKm9UOzuyG/E6wysbjeW4GvP9nvbBy/HWylZ9ruz5C1c24/r5vfzW60Jaq4m0Zn1298WlpbLnXju7F+3JzeGLJlv7sVF7HJ1+T1sUY80q53cvph/3gwzX62ss154MYr3OlT95LI1Jr2fgPw2IBhANiAZEA6IB0QCiAdGAaEA0IBoQDSAaEA2IBkQDogFEA6IB0YBoQDQgGkA0IBoQDYgGRAOIBkQDogHRgGjgFKq+5+a3ND7l2t4Pd/gk69WyfLaqR7M2GtE9k+mq7/R9xtXVtXY6tMuef3NVC4fWTdGs5PdseT0D0YBoQDQgGhANIBoQDYgGRAOiAUQDogHRgGhANCAaQDQgGhANiAZEA4gGRAOigdyiKYqppmUAvzQgGhANiAZEA4gGRAOiAdGAaOB0+ynAAHOuWl3ZFtplAAAAAElFTkSuQmCC" alt="Mistral AI">
+    </a>
+</p>
+
+<p align="center">
     <a href=".github/version.json" title="Go to changelog" target="_blank">
         <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Mistral+AI+Toolkit&query=version&url=https%3A%2F%2Fraw.githubusercontent.com%2FRMNCLDYO%2Fmistral-ai-toolkit%2Fmain%2F.github%2Fversion.json" alt="Version">
     </a>
