@@ -10,8 +10,8 @@ print("                       [v1.0.0] by @rmncldyo                      \n")
 print("------------------------------------------------------------------\n")
 
 class Client:
-    def __init__(self, api_key):
-        self.config = load_config()
+    def __init__(self, api_key=None):
+        self.config = load_config(api_key=api_key)
         self.api_key = api_key if api_key else self.config.get('api_key')
         self.version = self.config.get('version')
         self.base_url = self.config.get('base_url')
