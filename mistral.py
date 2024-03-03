@@ -16,7 +16,7 @@ class Mistral:
 
             print("Assistant: Hello! How can I assist you today?")
             while True:
-                user_input = input("User: ")
+                user_input = input("User: ").strip()
                 if user_input.lower() in ['exit', 'quit']:
                     print("\nThank you for using the Mistral AI toolkit. Have a great day!")
                     break
