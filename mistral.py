@@ -5,7 +5,7 @@ class Mistral:
     def __init__(self):
         self.client = None
 
-    def chat(self, api_key=None, model="mistral-large-latest", json=False, system_prompt=None, temperature=None, top_p=None, max_tokens=None, stream=None, safe_prompt=None, random_seed=None):
+    def chat(self, api_key=None, model="mistral-large-latest", json=None, system_prompt=None, temperature=None, top_p=None, max_tokens=None, stream=None, safe_prompt=None, random_seed=None):
         
         self.client = Client(api_key=api_key)
 
@@ -41,12 +41,10 @@ class Mistral:
 
                 if stream:
                     response = await self.client.stream_post(endpoint, data)
-                    assistant_response = response
                 else:
                     response = await self.client.post(endpoint, data)
-                    assistant_response = response
-                    print(f"Assistant: {assistant_response}")
-                conversation_history.append({"role": "assistant", "content": assistant_response})
+                    print(f"Assistant: {response}")
+                conversation_history.append({"role": "assistant", "content": response})
 
         try:
             asyncio.run(conversation())
