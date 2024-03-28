@@ -30,10 +30,10 @@
 The Mistral AI Toolkit makes it easy to use Mistral's open models `Mistral` and `Mixtral` for creating chatbots and generating text. It's designed for everyone, from beginners to experienced developers, allowing quick addition of AI features to projects with simple commands. While it offers simplicity and lightweight integration, it doesn't compromise on power; experienced developers can access the full suite of advanced options available via the API, ensuring robust customization and control. This toolkit is perfect for those looking to efficiently tap into advanced AI without getting bogged down in technical details, yet it still provides the depth needed for complex project requirements.
 
 ## Key Features
-- **Chat Functionality**: Engage in interactive conversations with Groq's suite of open and advanced conversational models.
+- **Chat Functionality**: Engage in interactive conversations with Mistral's suite of open and advanced conversational models.
 - **Text Generation**: Produce creative and contextually relevant text based on prompts.
 - **Command-Line Interface (CLI)**: Access the full suite of functionalities directly from the command line.
-- **Python Wrapper**: Simplify interaction with Groq's LPU inference models in only 2 lines of code.
+- **Python Wrapper**: Simplify interaction with Mistral's open models in only 2 lines of code.
 - **Streamed Responses**: Receive responses as they are generated for real-time interaction.
 - **JSON Mode**: Enable JSON-formatted responses for easier parsing and integration into applications.
 - **Flexible Configuration**: Customize the token limits, system prompts, max tokens, temperature and more.
