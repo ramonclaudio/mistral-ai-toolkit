@@ -27,7 +27,7 @@
 
 ## Overview
 
-The Mistral AI Toolkit makes it easy to use Mistral's open models `Mistral` and `Mixtral` for creating chatbots and generating text. It's designed for everyone, from beginners to experienced developers, allowing quick addition of AI features to projects with simple commands. While it offers simplicity and lightweight integration, it doesn't compromise on power; experienced developers can access the full suite of advanced options available via the API, ensuring robust customization and control. This toolkit is perfect for those looking to efficiently tap into advanced AI without getting bogged down in technical details, yet it still provides the depth needed for complex project requirements.
+The Mistral AI Toolkit makes it easy to use Mistral's open models `Mistral-7b` and `Mixtral-8x7b` along with their flagship suite of models `Mistral (tiny, small, medium & large)` for creating chatbots and generating contextually relevant text based on prompts. It's designed for everyone, from beginners to experienced developers, allowing quick addition of AI features to projects with simple commands. While it offers simplicity and lightweight integration, it doesn't compromise on power; experienced developers can access the full suite of advanced options available via the API, ensuring robust customization and control. This toolkit is perfect for those looking to efficiently tap into advanced AI without getting bogged down in technical details, yet it still provides the depth needed for complex project requirements.
 
 ## Key Features
 - **Chat Functionality**: Engage in interactive conversations with Mistral's suite of open and advanced conversational models.
