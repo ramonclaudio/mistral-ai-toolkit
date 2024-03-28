@@ -1,12 +1,13 @@
-import asyncio
 import sys
+import threading
+import time
 
 class Loading:
     def __init__(self):
         self.spinner = '|/-\\'
         self.spinner_index = 0
         self.running = False
-        self.task = None
+        self.thread = None
 
     def hide_cursor(self):
         sys.stdout.write('\033[?25l')
@@ -20,12 +21,12 @@ class Loading:
         sys.stdout.write('\r\033[K')
         sys.stdout.flush()
 
-    async def update(self):
+    def update(self):
         while self.running:
             sys.stdout.write('\rWaiting for assistant response... ' + self.spinner[self.spinner_index])
             sys.stdout.flush()
             self.spinner_index = (self.spinner_index + 1) % len(self.spinner)
-            await asyncio.sleep(0.1)
+            time.sleep(0.1)
         self.clear_line()
         self.show_cursor()
 
@@ -33,11 +34,10 @@ class Loading:
         if not self.running:
             self.running = True
             self.hide_cursor()
-            self.task = asyncio.create_task(self.update())
+            self.thread = threading.Thread(target=self.update)
+            self.thread.start()
 
-    async def stop(self):
+    def stop(self):
         if self.running:
             self.running = False
-            if self.task:
-                await self.task
-                self.task = None
+            self.thread.join()
