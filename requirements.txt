@@ -1,8 +1,7 @@
 # Core dependencies
-httpx
-asyncio
+requests
 
-# Optional dependencies (needed only if you plan to use an .env file for environment variables)
-# python-dotenv
+# Optional dependencies
+python-dotenv
 
 # Additional dependencies may be added as needed
