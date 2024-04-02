@@ -26,7 +26,6 @@
 </p>
 
 ## Overview
-
 The Mistral AI Toolkit makes it easy to use Mistral's open models `Mistral-7b` and `Mixtral-8x7b` along with their flagship suite of models `Mistral (tiny, small, medium & large)` for creating chatbots and generating contextually relevant text based on prompts. It's designed for everyone, from beginners to experienced developers, allowing quick addition of AI features to projects with simple commands. While it offers simplicity and lightweight integration, it doesn't compromise on power; experienced developers can access the full suite of advanced options available via the API, ensuring robust customization and control. This toolkit is perfect for those looking to efficiently tap into advanced AI without getting bogged down in technical details, yet it still provides the depth needed for complex project requirements.
 
 ## Key Features
@@ -36,7 +35,7 @@ The Mistral AI Toolkit makes it easy to use Mistral's open models `Mistral-7b` a
 - **Python Wrapper**: Simplify interaction with Mistral's open models in only 2 lines of code.
 - **Streamed Responses**: Receive responses as they are generated for real-time interaction.
 - **JSON Mode**: Enable JSON-formatted responses for easier parsing and integration into applications.
-- **Flexible Configuration**: Customize the token limits, system prompts, max tokens, temperature and more.
+- **Flexible Configuration**: Customize the token limits, system prompt, random seed, temperature and more.
 - **Minimal Dependencies**: Built to be efficient and lightweight, requiring only the `requests` package for operation.
 
 ## Prerequisites
@@ -149,31 +148,31 @@ Text().run(prompt="Which one is heavier a pound of iron or a kilogram of feather
 ## Advanced Configuration
 
 ### CLI and Wrapper Options
-| **Description**                       | **CLI Flags**            | **CLI Usage**                                      | **Wrapper Usage**                                |
-|---------------------------------------|--------------------------|----------------------------------------------------|--------------------------------------------------|
-| Enable chat mode                      | `-c`,  `--chat`          | --chat                                             | *See mode usage above.*                          |
-| Enable text mode                      | `-t`,  `--text`          | --text                                             | *See mode usage above.*                          |
-| API key for authentication            | `-a`,  `--api_key`       | --api_key "your_api_key"                           | api_key="your_api_key"                           |
-| Model to use                          | `-m`,  `--model`         | --model "mistral-large-latest"                     | model="mistral-large-latest"                     |
-| User prompt                           | `-p`,  `--prompt`        | --prompt "Hello, how are you today?"               | prompt="Hello, how are you today?"               |
-| Enable streaming mode for responses   | `-s`,  `--stream`        | --stream                                           | stream=True                                      |
-| Enable json mode for responses        | `-js`, `--json`          | --json                                             | json=True                                        |
-| System prompt (instructions)          | `-sp`, `--system_prompt` | --system_prompt "You are an advanced AI assistant" | system_prompt="You are an advanced AI assistant" |
-| Maximum number of tokens to generate  | `-mt`, `--max_tokens`    | --max_tokens 1024                                  | max_tokens=1024                                  |
-| Sampling temperature                  | `-tm`, `--temperature`   | --temperature 0.7                                  | temperature=0.7                                  |
-| Nucleus sampling threshold            | `-tp`, `--top_p`         | --top_p 0.9                                        | top_p=0.9                                        |
-| Random seed for sampling              | `-rs`, `--random_seed`   | --random_seed 42                                   | random_seed=42                                   |
-| Enable safe prompt mode for responses | `-sf`, `--safe_prompt`   | --safe_prompt                                      | safe_prompt=True                                 |
+| **Description**              | **CLI Flags**            | **CLI Usage**                                      | **Wrapper Usage**                                |
+|------------------------------|--------------------------|----------------------------------------------------|--------------------------------------------------|
+| Enable chat mode             | `-c`,  `--chat`          | --chat                                             | *See mode usage above.*                          |
+| Enable text mode             | `-t`,  `--text`          | --text                                             | *See mode usage above.*                          |
+| API key for authentication   | `-a`,  `--api_key`       | --api_key "your_api_key"                           | api_key="your_api_key"                           |
+| Model name                   | `-m`,  `--model`         | --model "mistral-large-latest"                     | model="mistral-large-latest"                     |
+| User prompt                  | `-p`,  `--prompt`        | --prompt "Hello, how are you today?"               | prompt="Hello, how are you today?"               |
+| Enable streaming mode        | `-s`,  `--stream`        | --stream                                           | stream=True                                      |
+| Enable json mode             | `-js`, `--json`          | --json                                             | json=True                                        |
+| System prompt (instructions) | `-sp`, `--system_prompt` | --system_prompt "You are an advanced AI assistant" | system_prompt="You are an advanced AI assistant" |
+| Maximum tokens to generate   | `-mt`, `--max_tokens`    | --max_tokens 1024                                  | max_tokens=1024                                  |
+| Sampling temperature         | `-tm`, `--temperature`   | --temperature 0.7                                  | temperature=0.7                                  |
+| Nucleus sampling threshold   | `-tp`, `--top_p`         | --top_p 0.9                                        | top_p=0.9                                        |
+| Random seed for sampling     | `-rs`, `--random_seed`   | --random_seed 42                                   | random_seed=42                                   |
+| Enable safe prompt mode      | `-sf`, `--safe_prompt`   | --safe_prompt                                      | safe_prompt=True                                 |
 
 ## Available Models
 
-| **Model**               | **Context Length *(max_tokens)*** |
-|-------------------------|-----------------------------------|
-| `open-mistral-7b`       | 32000                             |
-| `open-mixtral-8x7b`     | 32000                             |
-| `mistral-small-latest`  | 32000                             |
-| `mistral-medium-latest` | 32000                             |
-| `mistral-large-latest`  | 32000                             |
+| **Model**               | **Max Tokens*** |
+|-------------------------|-----------------|
+| `open-mistral-7b`       | 32000           |
+| `open-mixtral-8x7b`     | 32000           |
+| `mistral-small-latest`  | 32000           |
+| `mistral-medium-latest` | 32000           |
+| `mistral-large-latest`  | 32000           |
 
 ## Contributing
 Contributions are welcome!
