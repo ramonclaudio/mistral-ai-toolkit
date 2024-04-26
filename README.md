@@ -172,6 +172,7 @@ Text().run(prompt="Which one is heavier a pound of iron or a kilogram of feather
 |-------------------------|----------------|
 | `open-mistral-7b`       | 32000          |
 | `open-mixtral-8x7b`     | 32000          |
+| `open-mixtral-8x22b`    | 64000          |
 | `mistral-small-latest`  | 32000          |
 | `mistral-medium-latest` | 32000          |
 | `mistral-large-latest`  | 32000          |
