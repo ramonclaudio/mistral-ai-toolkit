@@ -133,7 +133,7 @@ Text mode is suitable for generating text content based on a provided prompt.
 
 ***CLI***
 ```bash
-python cli.py --text --prompt "Which one is heavier a pound of iron or a kilogram of feathers?"
+python cli.py --text --prompt "Which one is heavier, a pound of iron or a kilogram of feathers?"
 ```
 
 ***Wrapper***
