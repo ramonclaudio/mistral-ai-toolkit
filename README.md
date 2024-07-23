@@ -26,7 +26,7 @@
 </p>
 
 ## Overview
-The Mistral AI Toolkit makes it easy to use Mistral's open models `Mistral-7b` and `Mixtral-8x7b` along with their flagship suite of models `Mistral (tiny, small, medium & large)` for creating chatbots and generating contextually relevant text based on prompts. It's designed for everyone, from beginners to experienced developers, allowing quick addition of AI features to projects with simple commands. While it offers simplicity and lightweight integration, it doesn't compromise on power; experienced developers can access the full suite of advanced options available via the API, ensuring robust customization and control. This toolkit is perfect for those looking to efficiently tap into advanced AI without getting bogged down in technical details, yet it still provides the depth needed for complex project requirements.
+The Mistral AI Toolkit makes it easy to use Mistral's open models `Mistral-7b` and `Mixtral-8x7b` along with their flagship suite of models `Mistral (tiny, small, medium & large)` and their latest model in collaboration with NVIDIA `Mistral NeMo` for creating chatbots and generating contextually relevant text based on prompts. It's designed for everyone, from beginners to experienced developers, allowing quick addition of AI features to projects with simple commands. While it offers simplicity and lightweight integration, it doesn't compromise on power; experienced developers can access the full suite of advanced options available via the API, ensuring robust customization and control. This toolkit is perfect for those looking to efficiently tap into advanced AI without getting bogged down in technical details, yet it still provides the depth needed for complex project requirements.
 
 ## Key Features
 - **Conversational AI**: Create interactive, real-time chat experiences (chatbots) or AI assistants.
@@ -164,14 +164,15 @@ Text().run(prompt="Which one is heavier a pound of iron or a kilogram of feather
 
 ## Available Models
 
-| **Model**               | **Max Tokens** |
-|-------------------------|----------------|
-| `open-mistral-7b`       | 32000          |
-| `open-mixtral-8x7b`     | 32000          |
-| `open-mixtral-8x22b`    | 64000          |
-| `mistral-small-latest`  | 32000          |
-| `mistral-medium-latest` | 32000          |
-| `mistral-large-latest`  | 32000          |
+| **Model**                                                             | **Max Tokens** |
+|-----------------------------------------------------------------------|----------------|
+| `open-mistral-nemo`                                                   | 128000         |
+| `open-mistral-7b`                                                     | 32000          |
+| `open-mixtral-8x7b`                                                   | 32000          |
+| `open-mixtral-8x22b`                                                  | 64000          |
+| `mistral-small-latest`                                                | 32000          |
+| `mistral-medium-latest` *(set to be deprecated in the coming months)* | 32000          |
+| `mistral-large-latest`                                                | 32000          |
 
 ## Contributing
 Contributions are welcome!
