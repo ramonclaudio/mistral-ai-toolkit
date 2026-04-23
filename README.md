@@ -1,208 +1,79 @@
-<p align="center">
-    <a href="https://mistral.ai/" title="Go to mistral.ai">
-        <img src="https://img.shields.io/badge/MISTRAL%20AI-FF7000?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM0AAAC9CAYAAAAQnvmoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBJREFUeNrs3cFKVFEcwOH/6FSEBSoRhHcxi1aFIO1s00Tv0C7GR8hdO2cTLe0Vol3vEE4vEEKrNhKkBRalY1bqmJ2ibaT3zuRx/D443NU9zD33/mburE4tkqKYakZJs9M78ezhx8jQRu1GLAfHKj1bM+kwPkzPVv3PcWkI71cnjdse22O3mEZzmC5oxD0F0YBoQDQgGhANIBoQDYgGRAOiAUQDogHRgGhANCAaQDQgGhANiAZEA4gGRAOiAdGAaEA0gGhANCAaEA2IBhANgzcuGjiaGdHAKVevPMN+GtsZXlkvGgdPo53hJ+vU7v3eRLevimJqLh0aZc9/+2htIBe7+Hyr/DVd7kV8GMZovqfxJssvhF8P0EKmX1adAczZigx3UZ6/0602wbrXM/CfBkQDiAZEA6IB0YBoANGAaEA0IBoQDYgGEA2IBkQDogHRAKIB0YBoQDQgGhANIBoQDYgGRAOiAUQDogHRgGhANCAa4F+qb1S7k8Z7C3lo29E6uB+3+j3tq8/rM196Fb4D3cP/GM1uGu8s5BE0osLW5X8zPbFXbQL30OsZiAZEA6IB0QCiAdGAaEA0IBoQDSAaEA2IBkQDogFEA6IB0YBoQDQgGkA0IBoQDYgGRAOIBkQDogHRgGhANIBoQDQgGjixKm9UOzuyG/E6wysbjeW4GvP9nvbBy/HWylZ9ruz5C1c24/r5vfzW60Jaq4m0Zn1298WlpbLnXju7F+3JzeGLJlv7sVF7HJ1+T1sUY80q53cvph/3gwzX62ss154MYr3OlT95LI1Jr2fgPw2IBhANiAZEA6IB0QCiAdGAaEA0IBoQDSAaEA2IBkQDogFEA6IB0YBoQDQgGkA0IBoQDYgGRAOIBkQDogHRgGjgFKq+5+a3ND7l2t4Pd/gk69WyfLaqR7M2GtE9k+mq7/R9xtXVtXY6tMuef3NVC4fWTdGs5PdseT0D0YBoQDQgGhANIBoQDYgGRAOiAUQDogHRgGhANCAaQDQgGhANiAZEA4gGRAOigdyiKYqppmUAvzQgGhANiAZEA4gGRAOiAdGAaOB0+ynAAHOuWl3ZFtplAAAAAElFTkSuQmCC" alt="Mistral AI">
-    </a>
-</p>
+# Mistral AI Toolkit
 
-<p align="center">
-    <a href=".github/CHANGELOG.md" title="Go to Changelog">
-    </a>
-</p>
+> **Unmaintained.** Use [`mistralai`](https://github.com/mistralai/client-python), Mistral's official Python SDK.
 
-<p align="center">
-    <a href=".github/CHANGELOG.md" title="Go to changelog"><img src="https://img.shields.io/badge/maintained-yes-2ea44f?style=for-the-badge" alt="maintained - yes"></a>
-    <a href=".github/CONTRIBUTING.md" title="Go to contributions doc"><img src="https://img.shields.io/badge/contributions-welcome-2ea44f?style=for-the-badge" alt="contributions - welcome"></a>
-</p>
+I've always preferred pair programming with LLMs from the terminal over copy-pasting from browser chats. Web UIs hit rate limits, lose context across tabs, and break flow when I'm moving code back and forth. When Mistral opened their API early 2024, the first-party Python SDK was barebones. I wanted streaming, JSON mode, system prompts, and both chat/text modes behind a single CLI and Python entry. So I built this for myself.
 
-<p align="center">
-    <a href="/">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ramonclaudio/mistral-ai-toolkit/main/.github/assets/mistral-logo-dark.png">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ramonclaudio/mistral-ai-toolkit/main/.github/assets/mistral-logo-light.png">
-          <img alt="Mistral AI" width="500" src="https://raw.githubusercontent.com/ramonclaudio/mistral-ai-toolkit/main/.github/assets/mistral-logo-light.png">
-        </picture>
-    </a>
-</p>
+Python wrapper and CLI for Mistral's open and closed models.
 
-## Overview
-The Mistral AI Toolkit makes it easy to use Mistral's open models `Mistral-7b` and `Mixtral-8x7b` along with their flagship suite of models `Mistral (tiny, small, medium & large)` and their latest model in collaboration with NVIDIA `Mistral NeMo` for creating chatbots and generating contextually relevant text based on prompts. It's designed for everyone, from beginners to experienced developers, allowing quick addition of AI features to projects with simple commands. While it offers simplicity and lightweight integration, it doesn't compromise on power; experienced developers can access the full suite of advanced options available via the API, ensuring robust customization and control. This toolkit is perfect for those looking to efficiently tap into advanced AI without getting bogged down in technical details, yet it still provides the depth needed for complex project requirements.
+## Install
 
-## Key Features
-- **Conversational AI**: Create interactive, real-time chat experiences (chatbots) or AI assistants.
-- **Text Generation**: Produce coherent and contextually relevant text and answers from simple prompts.
-- **Highly Customizable**: Tailor settings like streaming, JSON outputs, system prompts and more to suit your specific requirements.
-- **Lightweight Integration**: Efficiently designed with minimal dependencies, requiring only the `requests` package for core functionality.
-
-## Prerequisites
-- `Python 3.x`
-- An API key from Mistral AI
-
-## Dependencies
-The following Python packages are required:
-- `requests`: For making HTTP requests to Mistral's API.
-
-The following Python packages are optional:
-- `python-dotenv`: For managing API keys and other environment variables.
-
-## Installation
-To use the Mistral AI Toolkit, clone the repository to your local machine and install the required Python packages.
-
-Clone the repository:
 ```bash
 git clone https://github.com/ramonclaudio/mistral-ai-toolkit.git
-```
-
-Navigate to the repositories folder:
-```bash
 cd mistral-ai-toolkit
-```
-
-Install the required dependencies:
-```bash
 pip install -r requirements.txt
 ```
 
 ## Configuration
-1. Obtain an API key from [Mistral AI](https://mistral.ai/).
-2. You have three options for managing your API key:
-   <details>
-   <summary>Click here to view the API key configuration options</summary>
-   
-   - **Setting it as an environment variable on your device (recommended for everyday use)**
-       - Navigate to your terminal.
-       - Add your API key like so:
-         ```shell
-         export MISTRAL_API_KEY=your_api_key
-         ```
-       This method allows the API key to be loaded automatically when using the wrapper or CLI.
-     
-   - **Using an .env file (recommended for development):**
-       - Install python-dotenv if you haven't already: `pip install python-dotenv`.
-       - Create a .env file in the project's root directory.
-       - Add your API key to the .env file like so:
-         ```makefile
-         MISTRAL_API_KEY=your_api_key
-         ```
-       This method allows the API key to be loaded automatically when using the wrapper or CLI, assuming you have python-dotenv installed and set up correctly.
-     
-   - **Direct Input:**
-       - If you prefer not to use a `.env` file, you can directly pass your API key as an argument to the CLI or the wrapper functions.
-         
-         ***CLI***
-         ```shell
-         --api_key "your_api_key"
-         ```
-         ***Wrapper***
-         ```shell
-         api_key="your_api_key"
-         ```
-       This method requires manually inputting your API key each time you initiate an API call, ensuring flexibility for different deployment environments.
-   </details>
 
-## Usage
-The Mistral AI Toolkit can be used in two different modes: `Chat` and `Text`. Each mode is designed for specific types of interactions with Mistral's open models.
+Get an API key at https://mistral.ai/. Set via env var, `.env`, or pass directly:
 
-## Chat Mode
-Chat mode is intended for chatting with an AI model (similar to a chatbot) or building conversational applications.
-
-#### Example Usage
-
-***CLI***
 ```bash
+export MISTRAL_API_KEY=your_api_key
+```
+
+## CLI
+
+```bash
+# Chat mode
 python cli.py --chat
-```
 
-***Wrapper***
-```python
-from mistral import Chat
-
-Chat().run()
-```
-
-> An executable version of this example can be found [here](./examples/example_chat.py). (*You must move this file to the root folder before running the program.*)
-
-## Text Mode
-Text mode is suitable for generating text content based on a provided prompt.
-
-#### Example Usage
-
-***CLI***
-```bash
+# Text mode
 python cli.py --text --prompt "Which one is heavier, a pound of iron or a kilogram of feathers?"
 ```
 
-***Wrapper***
-```python
-from mistral import Text
+Type `exit` or `quit` to leave chat.
 
-Text().run(prompt="Which one is heavier a pound of iron or a kilogram of feathers?")
+## Python
+
+```python
+from mistral import Chat
+Chat().run()
+
+from mistral import Text
+Text().run(prompt="Your question here")
 ```
 
-> An executable version of this example can be found [here](./examples/example_text.py). (*You must move this file to the root folder before running the program.*)
+## Options
 
-## Advanced Configuration
+| Description | CLI | Python |
+| --- | --- | --- |
+| Chat mode | `--chat` | `Chat()` |
+| Text mode | `--text` | `Text()` |
+| API key | `--api_key` | `api_key=` |
+| Model | `--model` | `model=` |
+| Prompt | `--prompt` | `prompt=` |
+| Streaming | `--stream` | `stream=True` |
+| JSON mode | `--json` | `json=True` |
+| System prompt | `--system_prompt` | `system_prompt=` |
+| Max tokens | `--max_tokens` | `max_tokens=` |
+| Temperature | `--temperature` | `temperature=` |
+| Top-p | `--top_p` | `top_p=` |
+| Random seed | `--random_seed` | `random_seed=` |
+| Safe prompt | `--safe_prompt` | `safe_prompt=True` |
 
-### CLI and Wrapper Options
-| **Description**              | **CLI Flags**            | **CLI Usage**                                      | **Wrapper Usage**                                |
-|------------------------------|--------------------------|----------------------------------------------------|--------------------------------------------------|
-| Enable chat mode             | `-c`,  `--chat`          | --chat                                             | *See mode usage above.*                          |
-| Enable text mode             | `-t`,  `--text`          | --text                                             | *See mode usage above.*                          |
-| API key for authentication   | `-a`,  `--api_key`       | --api_key "your_api_key"                           | api_key="your_api_key"                           |
-| Model name                   | `-m`,  `--model`         | --model "mistral-large-latest"                     | model="mistral-large-latest"                     |
-| User prompt                  | `-p`,  `--prompt`        | --prompt "Hello, how are you today?"               | prompt="Hello, how are you today?"               |
-| Enable streaming mode        | `-s`,  `--stream`        | --stream                                           | stream=True                                      |
-| Enable json mode             | `-js`, `--json`          | --json                                             | json=True                                        |
-| System prompt (instructions) | `-sp`, `--system_prompt` | --system_prompt "You are an advanced AI assistant" | system_prompt="You are an advanced AI assistant" |
-| Maximum tokens to generate   | `-mt`, `--max_tokens`    | --max_tokens 1024                                  | max_tokens=1024                                  |
-| Sampling temperature         | `-tm`, `--temperature`   | --temperature 0.7                                  | temperature=0.7                                  |
-| Nucleus sampling threshold   | `-tp`, `--top_p`         | --top_p 0.9                                        | top_p=0.9                                        |
-| Random seed for sampling     | `-rs`, `--random_seed`   | --random_seed 42                                   | random_seed=42                                   |
-| Enable safe prompt mode      | `-sf`, `--safe_prompt`   | --safe_prompt                                      | safe_prompt=True                                 |
+## Models
 
-> *To exit the program at any time, you can type **`exit`** or **`quit`**. This command works similarly whether you're interacting with the program via the CLI or through the Python wrapper ensuring that you can easily and safely conclude your work with the Mistral AI Toolkit without having to resort to interrupt signals or forcibly closing the terminal or command prompt.*
-
-## Available Models
-
-| **Model**                                                             | **Max Tokens** |
-|-----------------------------------------------------------------------|----------------|
-| `open-mistral-nemo`                                                   | 128000         |
-| `open-mistral-7b`                                                     | 32000          |
-| `open-mixtral-8x7b`                                                   | 32000          |
-| `open-mixtral-8x22b`                                                  | 64000          |
-| `mistral-small-latest`                                                | 32000          |
-| `mistral-medium-latest` *(set to be deprecated in the coming months)* | 32000          |
-| `mistral-large-latest`                                                | 32000          |
-
-## Contributing
-Contributions are welcome!
-
-Please refer to [CONTRIBUTING.md](.github/CONTRIBUTING.md) for detailed guidelines on how to contribute to this project.
-
-## Reporting Issues
-Encountered a bug? We'd love to hear about it. Please follow these steps to report any issues:
-
-1. Check if the issue has already been reported.
-2. Use the [Bug Report](.github/ISSUE_TEMPLATE/bug_report.md) template to create a detailed report.
-3. Submit the report [here](https://github.com/ramonclaudio/mistral-ai-toolkit/issues).
-
-Your report will help us make the project better for everyone.
-
-## Feature Requests
-Got an idea for a new feature? Feel free to suggest it. Here's how:
-
-1. Check if the feature has already been suggested or implemented.
-2. Use the [Feature Request](.github/ISSUE_TEMPLATE/feature_request.md) template to create a detailed request.
-3. Submit the request [here](https://github.com/ramonclaudio/mistral-ai-toolkit/issues).
-
-Your suggestions for improvements are always welcome.
-
-## Versioning and Changelog
-Stay up-to-date with the latest changes and improvements in each version:
-
-- [CHANGELOG.md](.github/CHANGELOG.md) provides detailed descriptions of each release.
-
-## Security
-Your security is important to us. If you discover a security vulnerability, please follow our responsible disclosure guidelines found in [SECURITY.md](.github/SECURITY.md). Please refrain from disclosing any vulnerabilities publicly until said vulnerability has been reported and addressed.
+| Model | Max tokens |
+| --- | --- |
+| `open-mistral-nemo` | 128000 |
+| `open-mistral-7b` | 32000 |
+| `open-mixtral-8x7b` | 32000 |
+| `open-mixtral-8x22b` | 64000 |
+| `mistral-small-latest` | 32000 |
+| `mistral-medium-latest` | 32000 |
+| `mistral-large-latest` | 32000 |
 
 ## License
-Licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+MIT
