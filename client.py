@@ -6,7 +6,7 @@ from config import load_config
 print("------------------------------------------------------------------\n")
 print("                        Mistral AI Toolkit                        \n")     
 print("               API Wrapper & Command-line Interface               \n")   
-print("                       [v1.1.0] by @rmncldyo                      \n")  
+print("                       [v1.1.0] by @ramonclaudio                      \n")  
 print("------------------------------------------------------------------\n")
 
 class Client:

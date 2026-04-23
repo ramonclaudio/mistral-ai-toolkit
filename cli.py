@@ -10,7 +10,7 @@ def main():
     ------------------------------------------------------------------
                             Mistral AI Toolkit                          
                    API Wrapper & Command-line Interface               
-                          [v1.1.0] by @rmncldyo                      
+                          [v1.1.0] by @ramonclaudio                      
     ------------------------------------------------------------------
 
     Mistral AI toolit is an API wrapper and command-line interface for Mistral AI's suit of large language models.
@@ -32,7 +32,7 @@ def main():
     | -sf, --safe_prompt   | Enable safe prompt mode              | --safe_prompt                                      |
     """,
         formatter_class=CustomFormatter,
-        epilog="For detailed usage information, visit our ReadMe here: github.com/RMNCLDYO/mistral-ai-toolkit"
+        epilog="For detailed usage information, visit our ReadMe here: github.com/ramonclaudio/mistral-ai-toolkit"
     )
 
     parser.add_argument('-c', '--chat', action='store_true', help='Enable chat mode')
